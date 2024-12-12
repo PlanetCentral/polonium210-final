@@ -1,0 +1,143 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #edf0f3, #cfd9df);
+    color: #333;
+    text-align: center;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    padding: 20px 0;
+    background-color: rgba(0, 102, 204, 0.9);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text-content {
+    flex: 1;
+    text-align: left;
+}
+
+.header-image {
+    max-width: 400px;
+    flex: 1;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Introduction and Textbox */
+#introduction,
+#hazards,
+#case-study,
+#solutions {
+    padding: 20px;
+    background: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.textbox {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.textbox p {
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Home Page Grid Links */
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #005bb5;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    background: linear-gradient(120deg, #0066cc, #005bb5);
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.back-button:hover {
+    background: linear-gradient(120deg, #005bb5, #004a99);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    padding: 10px 0;
+    background-color: #0066cc;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
